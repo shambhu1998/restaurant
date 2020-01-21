@@ -11,5 +11,5 @@ RUN mkdir /restaurant
 WORKDIR /restaurant
 COPY ./restaurant /restaurant
 
-RUN useradd -rm -d /restaurant -s /bin/bash -g root -G sudo -u 1000 user
+RUN useradd -d /restaurant user
 USER user
